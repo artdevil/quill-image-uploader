@@ -21,7 +21,7 @@ class ImageUploader {
 		this.range = this.quill.getSelection();
 		this.fileHolder = document.createElement('input');
 		this.fileHolder.setAttribute('type', 'file');
-		this.fileHolder.setAttribute('accept', 'image/*');
+		this.fileHolder.setAttribute('accept', 'image/jpg, image/jpeg, image/png, image/gif');
 		this.fileHolder.setAttribute('style', 'visibility:hidden');
 
 		this.fileHolder.onchange = this.fileChanged.bind(this);
