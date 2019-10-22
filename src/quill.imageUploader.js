@@ -24,7 +24,7 @@ class ImageUploader {
 		this.fileHolder.setAttribute('accept', 'image/jpg, image/jpeg, image/png, image/gif');
 		this.fileHolder.setAttribute('style', 'visibility:hidden');
 
-		if (this.options.noPreviewOnChange != undefined && this.options.noPreviewOnChange) {
+		if (this.options.noPreviewOnChange == undefined || !this.options.noPreviewOnChange) {
 			this.fileHolder.onchange = this.fileChanged.bind(this);
 		}
 
